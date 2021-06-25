@@ -1,2 +1,2 @@
-# POSTMAM-API-COLLECTION
-A list of PostMan requests for the Curriculum 
+# POSTMAN-API-COLLECTION
+The PostMan Collection has 3 GET Requests and 2 POST requests. The GET requests enquire all normalized names (RxNorm) for Asprin and returns all related RxNorm related to Asprin in the NIH server. The POST requests ............
