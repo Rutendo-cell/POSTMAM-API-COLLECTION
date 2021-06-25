@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "d9d12a38-e745-4136-9813-31975bd8cddd",
+		"name": "POSTMAN API Collection",
+		"description": "API use examples for LHS 668 fall 2020",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RxNorm All Related to Aspirin 81mg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rxnav.nlm.nih.gov/REST/rxcui/315431/allrelated",
+					"protocol": "https",
+					"host": [
+						"rxnav",
+						"nlm",
+						"nih",
+						"gov"
+					],
+					"path": [
+						"REST",
+						"rxcui",
+						"315431",
+						"allrelated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RxNorm All Related to Aspirin 81mg JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rxnav.nlm.nih.gov/REST/rxcui/315431/allrelated.json",
+					"protocol": "https",
+					"host": [
+						"rxnav",
+						"nlm",
+						"nih",
+						"gov"
+					],
+					"path": [
+						"REST",
+						"rxcui",
+						"315431",
+						"allrelated.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Example of an AHA Hospital Data Set",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "https://dashboard.healthit.gov/api/open-api.php?source=AHA_2008-2015.csv",
+					"protocol": "https",
+					"host": [
+						"dashboard",
+						"healthit",
+						"gov"
+					],
+					"path": [
+						"api",
+						"open-api.php"
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "AHA_2008-2015.csv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CPIC CYP2C19 Citalopram Recommendations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"CYP2C19\": {\n    \"diplotype\": \"*1/*1\",\n    \"phenotype\": \"Poor metabolizer\"\n  }\n}"
+				},
+				"url": {
+					"raw": "https://activator.kgrid.org/99999/fk4d22836k/dosingrecommendation",
+					"protocol": "https",
+					"host": [
+						"activator",
+						"kgrid",
+						"org"
+					],
+					"path": [
+						"99999",
+						"fk4d22836k",
+						"dosingrecommendation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Six Year Lung Cancer Risk Score",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"age\": 65,\n  \"ethnicity\": 1,\n  \"bmi\": 27,\n  \"cigsPerDay\": 10,\n  \"edLevel\": 1,\n  \"hxLungCancer\": 1,\n  \"hxLungCancerFam\": 1,\n  \"hxNonLungCancerDz\": 1,\n  \"yrsQuit\": 1,\n  \"yrsSmoker\": 20\n}"
+				},
+				"url": {
+					"raw": "https://activator.kgrid.org/99999/fk4jh3tk9s/getSixyearprobability",
+					"protocol": "https",
+					"host": [
+						"activator",
+						"kgrid",
+						"org"
+					],
+					"path": [
+						"99999",
+						"fk4jh3tk9s",
+						"getSixyearprobability"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
