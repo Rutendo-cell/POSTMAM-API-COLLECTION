@@ -1,2 +1,2 @@
 # POSTMAN-API-COLLECTION
-The PostMan Collection has 3 GET Requests and 2 POST requests. The GET requests enquire all normalized names (RxNorm) for Asprin and returns all related RxNorm related to Asprin in the NIH server. The POST requests ............
+The PostMan Collection has 3 GET Requests and 2 POST requests. The GET requests enquire all normalized names (RxNorm) for Asprin and returns all related RxNorm related to Asprin in the NIH server. The POST requests the first one shows the dosing recommendation of Citalopram and the second one shows a six year cancer risk score which is a six year probabilty of lung cancer.
